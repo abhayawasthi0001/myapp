@@ -27,7 +27,7 @@ function App() {
   const fetchTodos = async () => {
     try {
       const response = await axios.get(
-        `https://backend-oskr.onrender.com/todos?name=${username}`
+        `https://todo-backend-lqyz.onrender.com/todos?name=${username}`
       );
       setAllTodos(response.data.todos);
     } catch (error) {
@@ -38,7 +38,7 @@ function App() {
   const handleDeleteTodo = async (todoId) => {
     try {
       const response = await axios.delete(
-        "https://backend-oskr.onrender.com/deleteTodo",
+        "https://todo-backend-lqyz.onrender.com/deleteTodo",
         {
           data: { name: username, todoId },
         }
@@ -59,7 +59,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "https://backend-oskr.onrender.com/signup",
+        "https://todo-backend-lqyz.onrender.com/signup",
         {
           name: username,
           password: password,
@@ -81,7 +81,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://backend-oskr.onrender.com/addTodo",
+        "https://todo-backend-lqyz.onrender.com/addTodo",
         {
           name: username,
           title,
