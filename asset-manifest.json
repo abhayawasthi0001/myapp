@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/abhayawasthi0001/myapp.git/static/css/main.b3a90844.css",
+    "main.js": "/abhayawasthi0001/myapp.git/static/js/main.bd503a90.js",
+    "static/js/488.75f1601f.chunk.js": "/abhayawasthi0001/myapp.git/static/js/488.75f1601f.chunk.js",
+    "index.html": "/abhayawasthi0001/myapp.git/index.html",
+    "main.b3a90844.css.map": "/abhayawasthi0001/myapp.git/static/css/main.b3a90844.css.map",
+    "main.bd503a90.js.map": "/abhayawasthi0001/myapp.git/static/js/main.bd503a90.js.map",
+    "488.75f1601f.chunk.js.map": "/abhayawasthi0001/myapp.git/static/js/488.75f1601f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3a90844.css",
+    "static/js/main.bd503a90.js"
+  ]
+}
