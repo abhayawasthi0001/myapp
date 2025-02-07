@@ -27,7 +27,7 @@ function App() {
   const fetchTodos = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/todos?name=${username}`
+        `https://backend-oskr.onrender.com/todos?name=${username}`
       );
       setAllTodos(response.data.todos);
     } catch (error) {
@@ -37,9 +37,12 @@ function App() {
 
   const handleDeleteTodo = async (todoId) => {
     try {
-      const response = await axios.delete("http://localhost:5000/deleteTodo", {
-        data: { name: username, todoId },
-      });
+      const response = await axios.delete(
+        "https://backend-oskr.onrender.com/deleteTodo",
+        {
+          data: { name: username, todoId },
+        }
+      );
       alert("Todo deleted successfully!");
       await fetchTodos(); // Refresh the todo list
     } catch (error) {
@@ -55,10 +58,13 @@ function App() {
     setShow(false);
 
     try {
-      const response = await axios.post("http://localhost:5000/signup", {
-        name: username,
-        password: password,
-      });
+      const response = await axios.post(
+        "https://backend-oskr.onrender.com/signup",
+        {
+          name: username,
+          password: password,
+        }
+      );
 
       if (response.data.todos) {
         setAllTodos(response.data.todos);
@@ -74,11 +80,14 @@ function App() {
   const handleAddTodo = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/addTodo", {
-        name: username,
-        title,
-        data: todoData,
-      });
+      const response = await axios.post(
+        "https://backend-oskr.onrender.com/addTodo",
+        {
+          name: username,
+          title,
+          data: todoData,
+        }
+      );
       alert("Todo added successfully!");
       setTitle("");
       settodoData("");
