@@ -1,0 +1,269 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  color: white;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0%;
+  border-bottom: 4px solid yellow;
+}
+nav > div {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav > h1 {
+  font-size: 30px;
+  margin-left: 15%;
+}
+
+nav > div > h3 {
+  font-size: 20px;
+}
+#signup {
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  margin: 0% 10%;
+}
+#hamburger,
+#cross {
+  font-family: 30px;
+  padding: 5px;
+  margin: 0px 10%;
+  display: none;
+}
+
+@media (max-width: 1230px) {
+  /* little small */
+  nav > div {
+    width: 40%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 740px) {
+  nav > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    padding: 10px;
+    border-bottom: 4px solid rgb(165, 165, 165);
+  }
+  .display {
+    display: none;
+  }
+  #hamburger,
+  #cross {
+    display: block;
+  }
+  #user {
+    margin: 10px 0px;
+  }
+}
+
+/* -----------------------------------------------------nav-end-------------------------------- */
+#user {
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+}
+
+article {
+  color: rgb(68, 68, 68);
+  background-color: black;
+  font-size: 10rem;
+  text-align: center;
+  padding: 17%;
+}
+
+#signup-form {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 20px;
+  border: 4px solid yellow;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+#signup-form h2 {
+  font-size: 25px;
+}
+#signup-form input {
+  color: black;
+  background-color: white;
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid yellow;
+  padding: 5px;
+}
+#signup-form button {
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+}
+#signup-form button:hover {
+  background-color: yellow;
+  color: black;
+}
+@media (max-width: 1230px) {
+  /* little small */
+  #signup-form {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+}
+
+/* ----------------------------------plus-button------------------------- */
+#plus {
+  color: yellow;
+  background-color: black;
+  font-size: 40px;
+  border: 4px solid yellow;
+  padding: 0.5% 0.9%;
+  border-radius: 50%;
+  position: fixed;
+  top: 80%;
+  left: 80%;
+}
+/* --------------------------------TodoAddForm-------------------------------------- */
+#todoAdd {
+  width: 30%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  background-color: black;
+  padding: 1%;
+  border: 4px solid yellow;
+  border-radius: 20px;
+  position: fixed;
+  top: 15%;
+  left: 34%;
+}
+#todoAdd > h2 {
+  font-size: 27px;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid yellow;
+}
+#todoAdd > input {
+  color: black;
+  background-color: white;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid yellow;
+  padding: 5px;
+}
+#todoAdd > h3 {
+  font-size: 15px;
+  color: rgb(181, 181, 181);
+  margin-right: 7%;
+  text-align: right;
+}
+#todoAdd > textarea {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid yellow;
+  padding: 5px;
+  font-size: 15px;
+}
+#todoAdd > button {
+  width: 20%;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  margin: 0% auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid yellow;
+}
+@media (max-width: 1230px) {
+  /* little small */
+  #todoAdd {
+    width: 50%;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+  }
+}
+@media (max-width: 740px) {
+  #todoAdd {
+    width: 70%;
+    height: 60%;
+    position: fixed;
+    top: 15%;
+    left: 15%;
+  }
+  #plus {
+    position: fixed;
+    top: 84%;
+  }
+}
+
+/* ------------------------------------------data of all todos below ------------------------------- */
+main {
+  background-color: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+main > #datadiv {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  border: 2px solid white;
+  padding: 10px 5px;
+  margin-bottom: 7px;
+  margin-left: 10%;
+  border-radius: 10px;
+}
+main > div > h3 {
+  font-size: 20px;
+}
+main > div > p {
+  font-size: 17px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#datadiv > button {
+  border: 2px solid white;
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+}
