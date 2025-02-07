@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/abhayawasthi0001.github.io/myapp",
+  "homepage": "https://github.com/abhayawasthi0001/myapp.git",
   "dependencies": {
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
