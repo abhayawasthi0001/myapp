@@ -104,8 +104,12 @@ function App() {
       <nav>
         <h1>TodoList</h1>
         <div className={menuopen === false && "display"}>
-          <h3>Home</h3>
-          <h3>Contact</h3>
+          <h3>
+            <a href="/">Home</a>
+          </h3>
+          <h3>
+            <a href="https://www.linkedin.com/in/abhay-awasthi/">Contact</a>
+          </h3>
           {!mainButton && <button id="user">{username}</button>}
           {mainButton && (
             <>

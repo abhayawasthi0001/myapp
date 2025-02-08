@@ -87,9 +87,10 @@ nav > div > h3 {
 }
 
 article {
+  width: auto;
   color: rgb(68, 68, 68);
   background-color: black;
-  font-size: 10rem;
+  font-size: 500%;
   text-align: center;
   padding: 17%;
 }
