@@ -169,6 +169,8 @@ function App() {
             value={username}
             onChange={handleUsername}
             placeholder="Enter UserName"
+            minLength={7}
+            maxLength={15}
             required
           />
           <input
