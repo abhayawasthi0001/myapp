@@ -212,7 +212,7 @@ function App() {
             value={todoData}
             onChange={handletodoData}
           ></textarea>
-          <button>Submit</button>
+          <button>submit</button>
         </form>
       )}
     </div>
